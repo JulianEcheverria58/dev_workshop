@@ -1,3 +1,6 @@
+import math
+
+
 class Geometria:
     """
     Class with geometric exercises.
@@ -42,6 +45,8 @@ class Geometria:
         Returns:
             float: Área del círculo
         """
+        return math.pi * (radio ** 2)
+
         pass
     
     def perimetro_circulo(self, radio):
@@ -54,6 +59,8 @@ class Geometria:
         Returns:
             float: Perímetro del círculo
         """
+        return 2 * math.pi * radio
+
         pass
     
     def area_triangulo(self, base, altura):
@@ -66,6 +73,8 @@ class Geometria:
             
         Returns:
             float: Área del triángulo
+
+        return 0.5 * base * altura
         """
         pass
     
@@ -81,6 +90,9 @@ class Geometria:
         Returns:
             float: Perímetro del triángulo
         """
+
+        return lado1 + lado2 + lado3
+    
         pass
     
     def es_triangulo_valido(self, lado1, lado2, lado3):
