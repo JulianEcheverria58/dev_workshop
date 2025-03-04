@@ -112,6 +112,7 @@ class Data:
         """
         pass
     
+    
     def matriz_transpuesta(self, matriz):
         """
         Calcula la transpuesta de una matriz.
