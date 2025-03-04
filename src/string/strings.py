@@ -14,6 +14,11 @@ class Strings:
         Returns:
             bool: True si es palíndromo, False en caso contrario
         """
+        
+        texto = texto.replace(" ", "").lower() 
+        return texto == texto[::-1]  
+
+        
         pass
     
     def invertir_cadena(self, texto):
@@ -25,7 +30,13 @@ class Strings:
             
         Returns:
             str: Cadena invertida
-        """
+        """ 
+        
+        invertida = ''
+        for char in texto:
+            invertida = char + invertida  # Se va agregando al inicio de la cadena invertida
+        return invertida
+        
         pass
     
     def contar_vocales(self, texto):

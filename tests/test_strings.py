@@ -1,5 +1,5 @@
 import pytest
-from src.strings.strings import Strings
+from src.string.strings import Strings
 
 class TestStrings:
     def setup_method(self):
@@ -16,7 +16,8 @@ class TestStrings:
         assert self.strings.es_palindromo("mundo") == False
         # Test con cadena vacía
         assert self.strings.es_palindromo("") == True
-    
+        
+   
     def test_invertir_cadena(self):
         # Test con cadenas simples
         assert self.strings.invertir_cadena("hola") == "aloh"
